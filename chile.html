@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Bandera de Chile</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        .chile {
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        .chile div:nth-child(1) {
+            background: navy;
+        }
+        .chile div:nth-child(2) {
+            background: white;
+        }
+        .chile div:nth-child(3),
+        .chile div:nth-child(4) {
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bandera de Chile</h1>
+    <div class="bandera chile">
+        <div></div><div></div>
+        <div></div><div></div>
+    </div>
+    <a href="index.html">← Volver</a>
+</body>
+</html>

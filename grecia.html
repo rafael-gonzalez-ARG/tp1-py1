@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Bandera de Grecia</title>
+    <style>
+        .bandera {
+            display: grid;
+            grid-template-rows: repeat(9, 1fr);
+            width: 270px;
+            height: 180px;
+            position: relative;
+            border: 1px solid #000;
+            overflow: hidden;
+        }
+        .bandera div {
+            background-color: white;
+        }
+        .bandera div:nth-child(odd) {
+            background-color: #0d5eaf;
+        }
+        .canton {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            background-color: #0d5eaf;
+        }
+        .cruz {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            background:
+                linear-gradient(to right, transparent 40%, white 40%, white 60%, transparent 60%),
+                linear-gradient(to bottom, transparent 40%, white 40%, white 60%, transparent 60%);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bandera de Grecia</h1>
+    <div class="bandera">
+        <div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div>
+        <div class="canton"></div>
+        <div class="cruz"></div>
+    </div>
+</body>
+</html>
